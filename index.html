@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Febryan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="profile">
+        <img src="pp.jpg" alt="Foto Profil" class="profile-img"/>
+        <h1>Labib Almubarok</h1>
+        <p class="tagline">Web Developer</p>
+      </div>
+      <nav>
+        <button class="nav-btn" onclick="scrollToSection('about')">Tentang Saya</button>
+        <button class="nav-btn" onclick="scrollToSection('projects')">Proyek</button>
+        <button class="nav-btn" onclick="scrollToSection('contact')">Kontak</button>
+      </nav>
+    </header>
+
+    <section id="about" class="card fade-in">
+      <h2>Tentang Saya</h2>
+      <p>
+        Saya adalah pengembang web yang bersemangat membangun solusi digital berdampak. Berpengalaman di berbagai proyek dengan teknologi web modern, saya selalu belajar dan berinovasi.
+      </p>
+    </section>
+
+    <section id="projects" class="card fade-in">
+      <h2>Galeri Proyek</h2>
+      <div class="projects">
+        <div class="project-item">
+          <img src="images/project1.jpg" alt="Proyek 1"/>
+          <h3>Aplikasi Web</h3>
+        </div>
+        <div class="project-item">
+          <img src="images/project2.jpg" alt="Proyek 2"/>
+          <h3>Landing Page</h3>
+        </div>
+        <div class="project-item">
+          <img src="images/project3.jpg" alt="Proyek 3"/>
+          <h3>Portal Berita</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="card fade-in">
+      <h2>Kontak Saya</h2>
+      <form id="contactForm">
+        <input type="text" id="nama" name="nama" placeholder="Nama" required />
+        <input type="email" id="email" name="email" placeholder="Email" required />
+        <textarea id="pesan" name="pesan" rows="4" placeholder="Pesan" required></textarea>
+        <button type="submit" class="submit-btn">Kirim</button>
+      </form>
+      <div id="formMessage"></div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Febryan. Seluruh hak cipta dilindungi.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
